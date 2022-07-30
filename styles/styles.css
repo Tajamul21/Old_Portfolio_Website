@@ -208,6 +208,7 @@ section {
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
+  text-align: justify;
 }
 
 /*About*/
@@ -313,6 +314,7 @@ section {
   line-height: 2rem;
   padding: 1rem;
   color: var(--color-grey-1);
+  text-align: justify;
 }
 .about-container .left-about h4 {
   font-size: 2rem;
@@ -444,6 +446,7 @@ section {
 }
 .timeline .timeline-item p {
   color: var(--color-grey-2);
+  text-align: justify;
 }
 
 .port-text {
@@ -456,6 +459,8 @@ section {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
+  text-align: justify;
+  
 }
 
 .portfolios .portfolio-item {
@@ -465,6 +470,10 @@ section {
 .ProjectText{
   width: 103%
 
+}
+
+.portfolios .portfolio-item .ProjectText .p{
+  text-align: justify;
 }
 .portfolios .portfolio-item img {
   width: 103%;
