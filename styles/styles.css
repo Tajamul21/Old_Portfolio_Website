@@ -860,6 +860,7 @@ counter-increment: li-counter;
     transform: translateX(-50%);
     width: 100%;
     background-color: var(--color-grey-5);
+    target:"_blank"
   }
   .controls .control {
     margin: 1rem 0.3rem;
