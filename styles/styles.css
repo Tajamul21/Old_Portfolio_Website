@@ -371,13 +371,13 @@ section {
   width: 100%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .react {
-  width: 80%;
+  width: 30%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .node {
   width: 90%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 70%;
+  width: 20%;
 }
 
 .stat-title {
