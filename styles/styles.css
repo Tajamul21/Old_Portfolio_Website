@@ -178,11 +178,12 @@ section {
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
-  height: 90%;
-  width: 68%;
+  height: 72%;
+  width: 53%;
   margin-left: 4rem;
-  background-color: var(--color-black);
+  background-color: var(--color-primary);
   transition: all 0.4s ease-in-out;
+  border-radius: 25px;
 }
 .header-content .left-header .image img {
   width: 100%;
@@ -193,6 +194,71 @@ section {
 }
 .header-content .left-header .image img:hover {
   filter: grayscale(0);
+}
+.header-content .left-header .image #slideshow {
+  overflow: hidden;
+  height: 710px;
+  width: 528px;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+ 
+/* Style each of the sides
+with a fixed width and height */
+.header-content .left-header .image .slide {
+  float: left;
+  height: 710px;
+  width: 528px;
+}
+
+
+ 
+/* Add animation to the slides */
+.header-content .left-header .image .slide-wrapper {
+   
+/* Calculate the total width on the
+  basis of number of slides */
+  width: calc(528px * 4);
+ 
+/* Specify the animation with the
+  duration and speed */
+  animation: slide 10s ease infinite;
+}
+.header-content .left-header .image #slideshow .slide .text {
+  overflow: hidden;
+  color: var(--color-primary);
+  font-size: 15px;
+  position: relative;
+  bottom: 8%;
+  width: 100%;
+  text-align: center;
+}
+ 
+/* Set the background color
+of each of the slides */
+
+ 
+/* Define the animation
+for the slideshow */
+@keyframes slide {
+   
+/* Calculate the margin-left for
+  each of the slides */
+  20% {
+    margin-left: 0px;
+  }
+ 
+  40% {
+    margin-left: calc(-528px * 1);
+  }
+ 
+  60% {
+    margin-left: calc(-528px * 2);
+  }
+ 
+  80% {
+    margin-left: calc(-528px * 3);
+  }
 }
 .header-content .right-header {
   display: flex;

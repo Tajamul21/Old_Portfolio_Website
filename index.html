@@ -19,7 +19,30 @@
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
-                    <img src="img/tajamul.jpg" alt="">
+                    
+                    <div id="slideshow">
+                        <div class="slide-wrapper">
+                             
+                            <!-- Define each of the slides
+                         and write the content -->
+                            <div class="slide">
+                                <img src="img/tajamul.jpg" alt="">
+                                <div class="text">Farewell of B-Tech</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/HDC_0097.jpg" alt="">
+                                <div class="text">Artpark IISc Bangalore Summit</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/robo.jpg" alt="">
+                                <div class="text">Robotics Challenge 2022</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/nit.jpg " alt="">
+                                <div class="text">Microsoft Workshop at NIT Srinagar</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="right-header">
@@ -983,7 +1006,7 @@
                                 </div>
                                 <p>
                                     <span>- tajamul21.ashraf[at]gmail[dot]com</span><br>
-                                    <span>- tajamul[at]cse[dot]iitd[dot]ac[dot]in</span>
+                                    <span>- tajamul[at]sit[dot]iitd[dot]ac[dot]in</span>
                                    
                                 </p>
                             </div>
@@ -1045,23 +1068,23 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="" class="contact-form">
-                            <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
-                            </div>
-                            <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
-                            </div>
-                            <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <a href="#" class="main-btn">
-                                    <span class="btn-text">Send Email</span>
-                                    <span class="btn-icon"><i class="fa fa-paper-plane"></i></span>
-                                </a>
-                            </div>
+                        <form action="contact_form.php" method="post" class="contact-form">
+                          <div class="input-control i-c-2">
+                            <input type="text" required name="name" placeholder="YOUR NAME">
+                            <input type="email" required name="email" placeholder="YOUR EMAIL">
+                          </div>
+                          <div class="input-control">
+                            <input type="text" required name="subject" placeholder="ENTER SUBJECT">
+                          </div>
+                          <div class="input-control">
+                            <textarea name="message" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                          </div>
+                          <div class="submit-btn">
+                            <button type="submit" class="main-btn">
+                              <span class="btn-text">Send Email</span>
+                              <span class="btn-icon"><i class="fa fa-paper-plane"></i></span>
+                            </button>
+                          </div>
                         </form>
                     </div>
                 </div>
