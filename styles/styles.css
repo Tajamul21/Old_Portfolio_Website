@@ -211,7 +211,7 @@ section {
 
 .header-content .left-header .image .slide-wrapper {
   width: calc(528px * 4);
-  animation: slide 10s ease infinite;
+  animation: slide 12s ease infinite;
 }
 
 /* Media query to adjust dimensions for smaller screens */
@@ -235,7 +235,7 @@ section {
   color: var(--color-primary);
   font-size: 15px;
   position: relative;
-  bottom: 8%;
+  bottom: 10%;
   width: 100%;
   text-align: center;
 }
@@ -841,6 +841,7 @@ counter-increment: li-counter;
   flex: 3;
   margin-left: 3rem;
 }
+
 .contact-content-con .right-contact .input-control {
   margin: 1.5rem 0;
 }
@@ -866,6 +867,59 @@ counter-increment: li-counter;
 .contact-content-con .right-contact .submit-btn {
   display: flex;
   justify-content: flex-start;
+}
+
+.contact-content-con .right-contact .status{
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-grey-5);
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
+  text-align: center;
+}
+#status.success{
+  background-color: var(--color-secondary);
+  animation: status 4s ease forwards;
+  text-align: center;
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-grey-5);
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
+  text-align: center;
+}
+
+#status.error{
+  background-color: var(--color-secondary);
+  color: white;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  90%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  100%{
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 /*Independed components*/
