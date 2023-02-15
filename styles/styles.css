@@ -202,27 +202,33 @@ section {
   margin: 0 auto;
   border-radius: 25px;
 }
- 
-/* Style each of the sides
-with a fixed width and height */
+
 .header-content .left-header .image .slide {
   float: left;
   height: 710px;
   width: 528px;
 }
 
-
- 
-/* Add animation to the slides */
 .header-content .left-header .image .slide-wrapper {
-   
-/* Calculate the total width on the
-  basis of number of slides */
   width: calc(528px * 4);
- 
-/* Specify the animation with the
-  duration and speed */
   animation: slide 10s ease infinite;
+}
+
+/* Media query to adjust dimensions for smaller screens */
+
+@media (max-width: 767px) {
+  .header-content .left-header .image #slideshow {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  .header-content .left-header .image .slide {
+    height: 400px;
+    width: 300px;
+  }
+  .header-content .left-header .image .slide-wrapper {
+    width: calc(300px * 4);
+  }
 }
 .header-content .left-header .image #slideshow .slide .text {
   overflow: hidden;
