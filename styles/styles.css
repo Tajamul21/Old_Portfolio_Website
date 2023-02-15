@@ -867,6 +867,7 @@ counter-increment: li-counter;
 .contact-content-con .right-contact .submit-btn {
   display: flex;
   justify-content: flex-start;
+  cursor: pointer; 
 }
 
 .contact-content-con .right-contact .status{
@@ -921,6 +922,15 @@ counter-increment: li-counter;
     pointer-events: none;
   }
 }
+.submit-btn .button {
+  background-color: var(--color-secondary);
+  border: none;
+  text-align: center;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer; 
+}
 
 /*Independed components*/
 .btn-con {
@@ -938,9 +948,11 @@ counter-increment: li-counter;
   align-self: flex-start;
   align-items: center;
   overflow: hidden;
+  cursor: pointer; 
 }
 .main-btn .btn-text {
   padding: 0 2rem;
+  cursor: pointer; 
 }
 .main-btn .btn-icon {
   background-color: var(--color-secondary);
@@ -949,6 +961,7 @@ counter-increment: li-counter;
   justify-content: center;
   border-radius: 50%;
   padding: 1rem;
+  cursor: pointer; 
 }
 .main-btn::before {
   content: "";
@@ -958,6 +971,7 @@ counter-increment: li-counter;
   transform: translateX(100%);
   transition: all 0.4s ease-out;
   z-index: -1;
+  cursor: pointer; 
 }
 .main-btn:hover {
   transition: all 0.4s ease-out;
@@ -968,6 +982,7 @@ counter-increment: li-counter;
   background-color: var(--color-secondary);
   transform: translateX(0);
   transition: all 0.4s ease-out;
+  cursor: pointer; 
 }
 
 .main-title {
