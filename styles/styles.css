@@ -153,6 +153,31 @@ section {
   color: var(--color-primary);
   pointer-events: none;
 }
+#typed {
+  color: #333; /* set initial text color */
+}
+
+#typed.emphasis {
+  color: var(--color-grey-3); /* set color for emphasized text */
+}
+
+
+#back-to-top-btn {
+  bottom: 5%;
+  right: 3%;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.7rem 0;
+  /* box-shadow: var(--box-shadow-1); */
+}
 
 /*Header-content*/
 .header-content {
