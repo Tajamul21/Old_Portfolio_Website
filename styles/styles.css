@@ -176,7 +176,7 @@ section {
   justify-content: center;
   align-items: center;
   margin: 0.7rem 0;
-  /* box-shadow: var(--box-shadow-1); */
+  box-shadow: var(--color-secondary);
 }
 
 /*Header-content*/
