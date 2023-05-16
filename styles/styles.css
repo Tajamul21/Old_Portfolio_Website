@@ -680,7 +680,7 @@ font-size: 2em;
 line-height: 1.2;
 font-weight: bold;
 text-align: center;
-color: white;
+color: var(--color-primary);
 background-color: #27AE60;
 transform: rotate(-20deg);
 -ms-transform: rotate(-20deg);
@@ -694,7 +694,7 @@ counter-increment: li-counter;
 .list-type6 ol {
   list-style-type: none;
   list-style-type: decimal;
-  margin: 5%;
+  margin: 0%;
   margin-left: 1em;
   padding: 0;
   counter-reset: li-counter;
@@ -702,15 +702,17 @@ counter-increment: li-counter;
   .list-type6 ol li{
   position: relative;
   margin-bottom: 1.5em;
-  padding: 0.5em;
+  padding: 0.2em;
   background-color: whitesmoke;
-  padding-left: 58px;
+  padding-left: 8px;
   }
   
-  .list-type6 a{
+  .list-type6 p{
   text-decoration:none;
   color:  #454e56 ;
-  font-size:18px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size:15px;
   font-family: 'Poppins', sans-serif;
   }
   
