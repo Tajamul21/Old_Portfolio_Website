@@ -235,7 +235,7 @@ section {
 }
 
 .header-content .left-header .image .slide-wrapper {
-  width: calc(528px * 5);
+  width: calc(528px * 6);
   animation: slide 20s ease infinite;
 }
 
@@ -252,7 +252,7 @@ section {
     width: 300px;
   }
   .header-content .left-header .image .slide-wrapper {
-    width: calc(300px * 4);
+    width: calc(300px * 6);
   }
 }
 .header-content .left-header .image #slideshow .slide .text {
@@ -279,19 +279,22 @@ for the slideshow */
     margin-left: 0px;
   }
  
-  30% {
+  20% {
     margin-left: calc(-528px * 1);
   }
  
-  45% {
+  35% {
     margin-left: calc(-528px * 2);
   }
  
-  60% {
+  50% {
     margin-left: calc(-528px * 3);
   }
-  80% {
+  70% {
     margin-left: calc(-528px * 4);
+  }
+  85% {
+    margin-left: calc(-528px * 5);
   }
 }
 .header-content .right-header {
